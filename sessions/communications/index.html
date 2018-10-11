@@ -237,6 +237,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
     <a href="../../introduction-for-trainers/" title="Preparation for Trainers" class="md-nav__link">
       Preparation for Trainers
     </a>
@@ -252,13 +264,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
-    <label class="md-nav__link" for="nav-2">
+    <label class="md-nav__link" for="nav-3">
       Sessions
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
+      <label class="md-nav__title" for="nav-3">
         Sessions
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -591,13 +603,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
-    <label class="md-nav__link" for="nav-3">
+    <label class="md-nav__link" for="nav-4">
       Handouts
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-4">
         Handouts
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -783,17 +795,48 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-5">
       Courses
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-5">
         Courses
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1">
+    
+    <label class="md-nav__link" for="nav-5-1">
+      Admin Training
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-1">
+        Admin Training
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../courses/preparation-for-courses/" title="Overview for Trainers" class="md-nav__link">
+      Overview for Trainers
+    </a>
+  </li>
+
         
           
           
@@ -816,6 +859,11 @@
     <a href="../../courses/admin-2-day/" title="Admin (2 day)" class="md-nav__link">
       Admin (2 day)
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -996,7 +1044,7 @@
 <p>Initial configuration should be done by a systems administrator.</p>
 <p>This session covers:</p>
 <ul>
-<li>How to use of Groups for newsletter subscriptions, and self-serve subscription management. Impact of using search results * instead of groups, or groups named for internal purposes.</li>
+<li>How to use of Groups for newsletter subscriptions, and self-serve subscription management. Impact of using search results instead of groups, or groups named for internal purposes.</li>
 <li>How to construct the parts of a personalized mass email and send it.</li>
 <li>How to send an SMS message.</li>
 <li>How to schedule reminder emails.</li>
@@ -1004,7 +1052,7 @@
 </ul>
 <hr />
 <h2 id="session-plan">Session Plan<a class="headerlink" href="#session-plan" title="Permanent link">&para;</a></h2>
-<p>This session aims to take 60 minutes.  It includes some front of the class demonstrations (that can be carried out using the CiviCRM that was used to run the training course). Since this session is about sending live email, it is probably worth 1) ensuring that live email can be sent from the environment that you are using, and 2) reinforcing the fact with students' that live email will be sent.</p>
+<p>This session aims to take 60 minutes. It includes some front of the class demonstrations (that can be carried out using the CiviCRM that was used to run the training course). Since this session is about sending live email, it is probably worth 1) ensuring that live email can be sent from the environment that you are using, and 2) reinforcing the fact with students that live email will be sent.</p>
 <h3 id="overview-5">Overview (5)<a class="headerlink" href="#overview-5" title="Permanent link">&para;</a></h3>
 <p>Outline the three big parts of CiviCRM that we'll be looking at during this session.  We'll start with CiviMail and with a bit of luck we'll have time to cover Scheduled reminders and SMS.</p>
 <ul>
@@ -1019,33 +1067,33 @@
 <li>Configuring mail server - something you will want to get a pro to do or use a third party service.</li>
 </ul>
 <h3 id="mass-mailing-civimail">Mass mailing / CiviMail<a class="headerlink" href="#mass-mailing-civimail" title="Permanent link">&para;</a></h3>
-<p>Mass or bulk emailing is also known by other terms, like sending newsletters or sending a mail blast, etc.  It makes sense to split this in two into</p>
+<p>Mass or bulk emailing is also known by other terms, like sending newsletters or sending a mail blast, etc. It makes sense to split this in two into</p>
 <ul>
 <li>mailing list management (covered in some exercises) and</li>
 <li>creating and sending newsletters</li>
 </ul>
 <h3 id="mailing-list-management-5">Mailing list management (5)<a class="headerlink" href="#mailing-list-management-5" title="Permanent link">&para;</a></h3>
-<p>There are two key points to get across here</p>
-<p>Groups are the main tool for mailing list management.  These can be smart groups (e.g. meet up attendees)</p>
-<p>Ask the class for examples of smart groups that would make sense as mailing lists. Make sure the final list contains</p>
+<p>There are two key points to get across here:</p>
+<p>1) Groups are the main tool for mailing list management.  These can be smart groups (e.g. meet up attendees).</p>
+<p>Ask the class for examples of smart groups that would make sense as mailing lists. Make sure the final list contains:</p>
 <ul>
 <li>members</li>
 <li>people that have attended an event</li>
-<li>people that have contributed more than a certain amount</li>
+<li>people that have contributed more than a certain amount.</li>
 </ul>
 <p>Show them the manage groups page where you can create and edit groups: /civicrm/group</p>
 <p>Show them that some but not all groups are mailing lists (so if you are wondering why your group is not showing up, it is probably because it is not a mailing list).</p>
-<p>2) CiviCRM allows people to control their own subscription to groups</p>
+<p>2) CiviCRM allows people to control their own subscription to groups.</p>
 <p>Show people the following page: /civicrm/mailing/subscribe and how this relates to /civicrm/group</p>
 <p>Explain difference between unsubscribe (removed from group) and opt out. Indicate that people who have opted out have their On hold status set true as though the email is invalid.</p>
-<p>Explain options for unsubscribe</p>
+<p>Explain options for unsubscribe:</p>
 <ul>
 <li>links in each email</li>
-<li>their contact dashboard</li>
+<li>their contact dashboard.</li>
 </ul>
 <h3 id="creating-newsletters-15">Creating newsletters (15)<a class="headerlink" href="#creating-newsletters-15" title="Permanent link">&para;</a></h3>
 <p>Demonstrate how to create a mailing by walking through the CiviMail wizard on civicrm.org and creating a mailing to the people that have registered to attend this training and to the trainers.</p>
-<p>A few key points to make sure that you get across</p>
+<p>A few key points to make sure that you get across:</p>
 <ul>
 <li>Mailings start with groups (might help to create a group and add the students to that group first)</li>
 <li>Mailings can exclude previous mailings</li>
@@ -1057,14 +1105,14 @@
 </ul>
 </li>
 <li>Mailings can be scheduled</li>
-<li>Mailings must include an opt out or unsubscribe</li>
+<li>Mailings must include an opt out or unsubscribe.</li>
 </ul>
 <p>Make sure that you include in the email:</p>
 <ul>
 <li>external links for tracking</li>
 <li>an image that they will have to download images to see</li>
 <li>a token that is replaced by their name</li>
-<li>a checksum link to a profile form
+<li>a checksum link to a profile form.
   The link detail is http://www.organisation.org/civicrm/profile/edit?reset=1&amp;gid=N&amp;id={contact.contact_id}&amp;{contact.checksum} where N is the ID of the profile form you want them to edit.
 The special link lasts for 7 days from the day you send the mailing (in Drupal / Joomla sites).</li>
 </ul>
@@ -1077,9 +1125,9 @@ The special link lasts for 7 days from the day you send the mailing (in Drupal /
 </ul>
 <p>Discuss downsides of using checksums, and ask group about possible problems. Make sure they come up with problem of forwarded email leading to privacy breach and overwriting of data.</p>
 <p>Discuss with the group how useful this feature is in terms of being to keep contact data up to date.</p>
-<p>Once your email is complete, send the mail.  Have people open the email and click on the links so that you can show them tracking info.</p>
+<p>Once your email is complete, send the mail. Have people open the email and click on the links so that you can show them tracking info.</p>
 <h3 id="scheduled-reminders-5">Scheduled reminders (5)<a class="headerlink" href="#scheduled-reminders-5" title="Permanent link">&para;</a></h3>
-<p>Scheduled reminders are very useful.  Can be based on events, memberships, activities, a date field for a contact.</p>
+<p>Scheduled reminders are very useful. Can be based on events, memberships, activities, a date field for a contact.</p>
 <p>Get people to come up with times at which you might want to use scheduled reminders.</p>
 <p>Make sure that the final list includes:</p>
 <ul>

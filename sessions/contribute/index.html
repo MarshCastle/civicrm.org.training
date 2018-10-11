@@ -1,0 +1,1090 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="This guide is aimed at CiviCRM trainers who train users, system administrators and developers who would like to learn more about configuring and using CiviCRM">
+      
+      
+      
+        <meta name="author" content="The CiviCRM community">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Contribute - CiviCRM Training Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../#contibute" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="CiviCRM Training Guide" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                CiviCRM Training Guide
+              </span>
+              <span class="md-header-nav__topic">
+                Contribute
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/marsh-circle/civicrm-training-guide/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="CiviCRM Training Guide" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    CiviCRM Training Guide
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/marsh-circle/civicrm-training-guide/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../introduction-for-trainers/" title="Preparation for Trainers" class="md-nav__link">
+      Preparation for Trainers
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Sessions
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Sessions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../activities/" title="Activities" class="md-nav__link">
+      Activities
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../organising-data/" title="Organising data" class="md-nav__link">
+      Organising data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../profiles/" title="Profiles" class="md-nav__link">
+      Profiles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Contribute
+      </label>
+    
+    <a href="./" title="Contribute" class="md-nav__link md-nav__link--active">
+      Contribute
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aim" title="Aim" class="md-nav__link">
+    Aim
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objectives" title="Objectives" class="md-nav__link">
+    Objectives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-points" title="Learning points" class="md-nav__link">
+    Learning points
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-plan" title="Session Plan" class="md-nav__link">
+    Session Plan
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-concepts-10" title="Basic concepts (10)" class="md-nav__link">
+    Basic concepts (10)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contribution-pages-10" title="Contribution pages (10)" class="md-nav__link">
+    Contribution pages (10)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contribution-page-exercises-25" title="Contribution page exercises (25)" class="md-nav__link">
+    Contribution page exercises (25)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#payment-processors-5" title="Payment processors (5)" class="md-nav__link">
+    Payment processors (5)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sales-tax-and-invoicing-5" title="Sales Tax and Invoicing (5)" class="md-nav__link">
+    Sales Tax and Invoicing (5)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personal-campaign-pages-5" title="Personal campaign pages (5)" class="md-nav__link">
+    Personal campaign pages (5)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../duplicates/" title="Duplicates" class="md-nav__link">
+      Duplicates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../website-integration/" title="Website integration" class="md-nav__link">
+      Website integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../events/" title="Events" class="md-nav__link">
+      Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../membership/" title="Membership" class="md-nav__link">
+      Membership
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../communications/" title="Communications" class="md-nav__link">
+      Communications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reports/" title="Reports" class="md-nav__link">
+      Reports
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../case-management/" title="Case management" class="md-nav__link">
+      Case management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grants/" title="Grant" class="md-nav__link">
+      Grant
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../campaign/" title="Campaign" class="md-nav__link">
+      Campaign
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../accounting-integration/" title="Accounting Integration" class="md-nav__link">
+      Accounting Integration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Handouts
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Handouts
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../handout/introduction-to-civicrm/" title="Introduction to CiviCRM" class="md-nav__link">
+      Introduction to CiviCRM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../handout/setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../handout/organising-data/" title="Organising data" class="md-nav__link">
+      Organising data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../handout/profiles/" title="Profiles" class="md-nav__link">
+      Profiles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../handout/contribute/" title="Contribute" class="md-nav__link">
+      Contribute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../handout/duplicates/" title="Duplicates" class="md-nav__link">
+      Duplicates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../handout/website-integration/" title="Website Integration" class="md-nav__link">
+      Website Integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../handout/events/" title="Events" class="md-nav__link">
+      Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../handout/membership/" title="Membership" class="md-nav__link">
+      Membership
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../handout/communications/" title="Communications" class="md-nav__link">
+      Communications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../handout/reports/" title="Reports" class="md-nav__link">
+      Reports
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../handout/case.md" title="Case Management" class="md-nav__link">
+      Case Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../handout/grants/" title="Grants" class="md-nav__link">
+      Grants
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../handout/campaign/" title="Campaign" class="md-nav__link">
+      Campaign
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Courses
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Courses
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../courses/admin-1-day/" title="Admin (1 day)" class="md-nav__link">
+      Admin (1 day)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../courses/admin-2-day/" title="Admin (2 day)" class="md-nav__link">
+      Admin (2 day)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../courses/fundraising-1-day/" title="Fundraising (1 day)" class="md-nav__link">
+      Fundraising (1 day)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#aim" title="Aim" class="md-nav__link">
+    Aim
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#objectives" title="Objectives" class="md-nav__link">
+    Objectives
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-points" title="Learning points" class="md-nav__link">
+    Learning points
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-plan" title="Session Plan" class="md-nav__link">
+    Session Plan
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-concepts-10" title="Basic concepts (10)" class="md-nav__link">
+    Basic concepts (10)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contribution-pages-10" title="Contribution pages (10)" class="md-nav__link">
+    Contribution pages (10)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contribution-page-exercises-25" title="Contribution page exercises (25)" class="md-nav__link">
+    Contribution page exercises (25)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#payment-processors-5" title="Payment processors (5)" class="md-nav__link">
+    Payment processors (5)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sales-tax-and-invoicing-5" title="Sales Tax and Invoicing (5)" class="md-nav__link">
+    Sales Tax and Invoicing (5)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personal-campaign-pages-5" title="Personal campaign pages (5)" class="md-nav__link">
+    Personal campaign pages (5)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/marsh-circle/civicrm-training-guide/edit/master/docs/sessions/contribute.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="contibute">Contibute<a class="headerlink" href="#contibute" title="Permanent link">&para;</a></h1>
+<h2 id="aim">Aim<a class="headerlink" href="#aim" title="Permanent link">&para;</a></h2>
+<p>By the end of the session, you should be able to manage contribution and contribution pages.</p>
+<hr />
+<h2 id="objectives">Objectives<a class="headerlink" href="#objectives" title="Permanent link">&para;</a></h2>
+<p>Become familiar with basic financial concepts in CiviCRM (including payment processors), be comfortable creating and working with online contribution pages, and be comfortable carrying out back end contribution administration and reporting.</p>
+<hr />
+<h2 id="learning-points">Learning points<a class="headerlink" href="#learning-points" title="Permanent link">&para;</a></h2>
+<p>Things to learn</p>
+<ul>
+<li>Basic CiviContribute concepts (contributions, financial types, custom data)</li>
+<li>Relationship of CiviContribute to other parts of CiviCRM (e.g. contacts, memberships and events)</li>
+<li>Contribution pages</li>
+<li>Payment processors</li>
+<li>Campaign widgets</li>
+<li>Premiums</li>
+<li>Personal campaign pages</li>
+<li>Sales tax and invoicing</li>
+<li>Back end contribution admin (including the contribution dashboard, creating and editing contributions, and bulk entry of offline contributions)</li>
+</ul>
+<hr />
+<h2 id="session-plan">Session Plan<a class="headerlink" href="#session-plan" title="Permanent link">&para;</a></h2>
+<p>This session should take 60 minutes. Explain that we'll cover the basics and that you can go into more depth using the book if you want to.</p>
+<h3 id="basic-concepts-10">Basic concepts (10)<a class="headerlink" href="#basic-concepts-10" title="Permanent link">&para;</a></h3>
+<p>Explain that contributions are the basic financial building block of CiviCRM, and that any financial transaction in CiviCRM (whether a donation, membership fee, etc.) is accompanied by a contribution.</p>
+<p>Contributions are similar to other CiviCRM entities like contacts.  Ask learners if they can think about how they might be similar.</p>
+<p>A final list of qualities of contributions should contain:</p>
+<ul>
+<li>CiviCRM comes with out of the box contribution types</li>
+<li>you can add more types of contribution (these can relate to accounting codes)</li>
+<li>you can attach custom data to contributions (ask them to think of some examples)</li>
+<li>contributions are always attached to a contact</li>
+<li>sometimes attached to other entities like participants and memberships</li>
+<li>Contributions are of a given type which define related financial types (for accounting integration)</li>
+<li>Contributions can be exported as a spreadsheet, and also in accounting package formats</li>
+</ul>
+<h3 id="contribution-pages-10">Contribution pages (10)<a class="headerlink" href="#contribution-pages-10" title="Permanent link">&para;</a></h3>
+<p>Explain that contribution pages:</p>
+<ul>
+<li>are out of the box</li>
+<li>allow people to donate money to you via your website</li>
+<li>have some useful features like<ul>
+<li>Profiles</li>
+<li>Recurring payments</li>
+<li>Campaign widgets</li>
+<li>Premiums</li>
+<li>Personal campaign pages</li>
+<li>Pledges</li>
+</ul>
+</li>
+</ul>
+<p>Show a few examples of real world contribution pages. It's probably helpful to show people some that have been themed, and some that haven't been themed.  https://www.eff.org/ and http://leukaemialymphomaresearch.org.uk/ have some good examples of themed pages.  CiviCRM has a good example of not themed pages.</p>
+<h3 id="contribution-page-exercises-25">Contribution page exercises (25)<a class="headerlink" href="#contribution-page-exercises-25" title="Permanent link">&para;</a></h3>
+<p>Before starting the exercises, it is a good idea to show people what contribution page administration looks like by showing them the manage contribution pages screen.</p>
+<p>Points to make clear include:</p>
+<ul>
+<li>you can set up as many as you like</li>
+<li>configuration happens via the tabs at the top of the screen.</li>
+</ul>
+<p>You should also explain to them techniques for testing (which include logging out or going into private browsing / incognito mode to test) and what happens if you don't log out for testing.</p>
+<p>When recapping the exercises, it might be worth noting the different ways that you can create contributions records in the backend (including the menu, the contributions page, the contact actions button).</p>
+<h3 id="payment-processors-5">Payment processors (5)<a class="headerlink" href="#payment-processors-5" title="Permanent link">&para;</a></h3>
+<p>Explain that if you want to take transactions on your site you'll need to integrate with a payment processor.  Points to make</p>
+<ul>
+<li>There are two types of payment processor</li>
+<li>on your website (SSL required, smoother workflow)</li>
+<li>on the payment processors website (easier and cheaper)</li>
+<li>All payment processors have different pricing schedules</li>
+<li>You can see the out of the box integrations on the payment processors page.</li>
+<li>Other payment processors are available via extensions</li>
+</ul>
+<h3 id="sales-tax-and-invoicing-5">Sales Tax and Invoicing (5)<a class="headerlink" href="#sales-tax-and-invoicing-5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Show people the sales tax and invoicing settings pages (administer&gt;CiviContribute&gt;CiviContribute component settings)</li>
+<li>Discuss the page settings (what do you call sales tax, due date and display settings)</li>
+<li>Then show them how to create the sales tax Account (administer&gt;CiviContribute&gt;Financial accounts), make sure Financial Account Type is set to Liability. Select Enabled and Is Tax and specify the Tax Rate.</li>
+<li>After you create the Financial Account, assign it to the specific Financial Type (adminster &gt; CiviContribute &gt; Financial Types). Find the Financial Type this sales tax applies to, and click on Accounts. Click on Assign Account.</li>
+<li>Once a sales tax Financial Account has been added, you will see it listed with the other Financial Accounts for that specific Financial Type.</li>
+</ul>
+<h3 id="personal-campaign-pages-5">Personal campaign pages (5)<a class="headerlink" href="#personal-campaign-pages-5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Can be configured from the contribution page admin screens</li>
+<li>allow you to set up justgiving style pages attached to a contribution page</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../profiles/" title="Profiles" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Profiles
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../duplicates/" title="Duplicates" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Duplicates
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>

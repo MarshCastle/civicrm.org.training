@@ -1,0 +1,1044 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="This guide is aimed at CiviCRM trainers who train users, system administrators and developers who would like to learn more about configuring and using CiviCRM">
+      
+      
+      
+        <meta name="author" content="The CiviCRM community">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.0.4">
+    
+    
+      
+        <title>Organising data - CiviCRM Training Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../../#organising-data" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="CiviCRM Training Guide" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                CiviCRM Training Guide
+              </span>
+              <span class="md-header-nav__topic">
+                Organising data
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/marsh-circle/civicrm-training-guide/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="CiviCRM Training Guide" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    CiviCRM Training Guide
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/marsh-circle/civicrm-training-guide/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../introduction-for-trainers/" title="Preparation for Trainers" class="md-nav__link">
+      Preparation for Trainers
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Sessions
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Sessions
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sessions/setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sessions/activities/" title="Activities" class="md-nav__link">
+      Activities
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sessions/organising-data/" title="Organising data" class="md-nav__link">
+      Organising data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sessions/profiles/" title="Profiles" class="md-nav__link">
+      Profiles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sessions/contribute/" title="Contribute" class="md-nav__link">
+      Contribute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sessions/duplicates/" title="Duplicates" class="md-nav__link">
+      Duplicates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sessions/website-integration/" title="Website integration" class="md-nav__link">
+      Website integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sessions/events/" title="Events" class="md-nav__link">
+      Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sessions/membership/" title="Membership" class="md-nav__link">
+      Membership
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sessions/communications/" title="Communications" class="md-nav__link">
+      Communications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sessions/reports/" title="Reports" class="md-nav__link">
+      Reports
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sessions/case-management/" title="Case management" class="md-nav__link">
+      Case management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sessions/grants/" title="Grant" class="md-nav__link">
+      Grant
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sessions/campaign/" title="Campaign" class="md-nav__link">
+      Campaign
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sessions/accounting-integration/" title="Accounting Integration" class="md-nav__link">
+      Accounting Integration
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Handouts
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Handouts
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../introduction-to-civicrm/" title="Introduction to CiviCRM" class="md-nav__link">
+      Introduction to CiviCRM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../setup/" title="Setup" class="md-nav__link">
+      Setup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Organising data
+      </label>
+    
+    <a href="./" title="Organising data" class="md-nav__link md-nav__link--active">
+      Organising data
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tags-vs-groups" title="Tags vs. groups" class="md-nav__link">
+    Tags vs. groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" title="Exercises" class="md-nav__link">
+    Exercises
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-custom-data-set" title="Creating a custom data set" class="md-nav__link">
+    Creating a custom data set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching-for-custom-data" title="Searching for custom data" class="md-nav__link">
+    Searching for custom data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-data-settings" title="Custom data settings" class="md-nav__link">
+    Custom data settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../profiles/" title="Profiles" class="md-nav__link">
+      Profiles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contribute/" title="Contribute" class="md-nav__link">
+      Contribute
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../duplicates/" title="Duplicates" class="md-nav__link">
+      Duplicates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../website-integration/" title="Website Integration" class="md-nav__link">
+      Website Integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../events/" title="Events" class="md-nav__link">
+      Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../membership/" title="Membership" class="md-nav__link">
+      Membership
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../communications/" title="Communications" class="md-nav__link">
+      Communications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../reports/" title="Reports" class="md-nav__link">
+      Reports
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../case.md" title="Case Management" class="md-nav__link">
+      Case Management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../grants/" title="Grants" class="md-nav__link">
+      Grants
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../campaign/" title="Campaign" class="md-nav__link">
+      Campaign
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Courses
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Courses
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../courses/admin-1-day/" title="Admin (1 day)" class="md-nav__link">
+      Admin (1 day)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../courses/admin-2-day/" title="Admin (2 day)" class="md-nav__link">
+      Admin (2 day)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../courses/fundraising-1-day/" title="Fundraising (1 day)" class="md-nav__link">
+      Fundraising (1 day)
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tags-vs-groups" title="Tags vs. groups" class="md-nav__link">
+    Tags vs. groups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises" title="Exercises" class="md-nav__link">
+    Exercises
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-custom-data-set" title="Creating a custom data set" class="md-nav__link">
+    Creating a custom data set
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#searching-for-custom-data" title="Searching for custom data" class="md-nav__link">
+    Searching for custom data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-data-settings" title="Custom data settings" class="md-nav__link">
+    Custom data settings
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/marsh-circle/civicrm-training-guide/edit/master/docs/handout/organising-data.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="organising-data">Organising data<a class="headerlink" href="#organising-data" title="Permanent link">&para;</a></h1>
+<h2 id="tags-vs-groups">Tags vs. groups<a class="headerlink" href="#tags-vs-groups" title="Permanent link">&para;</a></h2>
+<p>A quick summary of the differences between tags and groups. Remember:</p>
+<ul>
+<li>There is quite a lot of overlap between tags and groups</li>
+<li>You'll learn from experience when to use one and not the other.</li>
+<li>You can reasonably easily change from a group to a tag and visa versa (select all contacts with a tag, and add them to a group)</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th>Tags</th>
+<th>Groups</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Where</td>
+<td>Can be added to contacts, activities and cases</td>
+<td>Can only be added to contacts</td>
+</tr>
+<tr>
+<td>History</td>
+<td>No history (unless you have logging turned on)</td>
+<td>Includes a history of when a contact was added and removed</td>
+</tr>
+<tr>
+<td>Mailings</td>
+<td>Limited integration with CiviMail</td>
+<td>Basic building block for CiviMail</td>
+</tr>
+<tr>
+<td>Profiles</td>
+<td>Can be displayed in profiles</td>
+<td>Can be displayed in profiles. Can also limit profile listings to a group and add contacts to a group on submission of profiles.</td>
+</tr>
+<tr>
+<td>Permissions</td>
+<td>Don't interact with permissions</td>
+<td>Can be used for CiviCRM ACLs (a type of permissioning</td>
+</tr>
+</tbody>
+</table>
+<h2 id="exercises">Exercises<a class="headerlink" href="#exercises" title="Permanent link">&para;</a></h2>
+<h3 id="creating-a-custom-data-set">Creating a custom data set<a class="headerlink" href="#creating-a-custom-data-set" title="Permanent link">&para;</a></h3>
+<p><strong>You'd like to collect more detailed information on potential funders of your organisation.</strong></p>
+<p><strong>You want to to collect 'free text' under the following headings...</strong></p>
+<ul>
+<li><strong>Background and history</strong></li>
+<li><strong>Funders priorities</strong></li>
+<li><strong>Strategic fit with our organisation</strong></li>
+</ul>
+<p><strong>...and a multiple choice question 'Likelihood of funding' which allows users to select <strong>one</strong> of the following</strong></p>
+<ul>
+<li><strong>Certain</strong></li>
+<li><strong>Very likely</strong></li>
+<li><strong>Moderate</strong></li>
+<li><strong>Unlikely</strong></li>
+<li><strong>Impossible</strong></li>
+</ul>
+<p><strong>Since we only want to collect this information for certain organisations, it makes sense to create a new contact type based on organisations called Funders.</strong></p>
+<p>1) Create a new contact type that extends Organisations called funder.</p>
+<p>2) Create a custom data set that is attached to Funders. There are quite a few options when it comes to creating custom data sets.</p>
+<p>3) Add custom data fields as above to this group</p>
+<p>4) Create a couple of new funders. Feel free to use your own information or the details below.</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Walter Foundation</th>
+<th>Cadence Trust</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Background and history</td>
+<td>Founded in 1995 by private individual</td>
+<td>Established 1950</td>
+</tr>
+<tr>
+<td>Funders priorities</td>
+<td>Improve access to education</td>
+<td>Promoting sustainable agriculture</td>
+</tr>
+<tr>
+<td>Strategic fit with our organisation</td>
+<td>Fits with our education projects</td>
+<td>Potentially fits with our city farms project.</td>
+</tr>
+<tr>
+<td>Likelihood of funding</td>
+<td>Very likely</td>
+<td>Moderate</td>
+</tr>
+</tbody>
+</table>
+<h3 id="searching-for-custom-data">Searching for custom data<a class="headerlink" href="#searching-for-custom-data" title="Permanent link">&para;</a></h3>
+<p>Now that we have some data in CiviCRM, use the <strong>Advanced search</strong> for all organisations that are very likely to fund your organisation (hopefully you will find one!)</p>
+<p>Note: if you are having trouble finding the Likelihood of funding field in advanced search, make sure that you have set it to searchable.</p>
+<h3 id="custom-data-settings">Custom data settings<a class="headerlink" href="#custom-data-settings" title="Permanent link">&para;</a></h3>
+<p>Using the custom data set you created above, explore how the following four options effect the display of data.</p>
+<ul>
+<li>Display Style</li>
+<li>Collapse this set on initial display</li>
+<li>Collapse this set in Advanced Search</li>
+<li>Is this Custom Data Set active?</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../setup/" title="Setup" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Setup
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../profiles/" title="Profiles" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Profiles
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
